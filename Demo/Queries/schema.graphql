@@ -1,0 +1,20 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  book: Book!
+}
+
+type Book {
+  title: String!
+  bookIdentificationNumber: Decimal!
+  author: Author!
+}
+
+"The built-in `Decimal` scalar type."
+scalar Decimal
+
+type Author {
+  name: String!
+}
